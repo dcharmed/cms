@@ -1,0 +1,51 @@
+body {
+    
+    height: 100%;
+}
+.jumbotron {
+    background-image: url("../images/landscape.jpg");
+    background-size: cover;
+    height: 600px;
+    padding-top: 11em;
+}
+
+.jumbotron hr {
+    border: 0.02em solid white;
+    width: 10%;
+}
+.btn-signin {
+    background: rgb(255, 255, 255,0.05);
+    color: black;
+}
+#features {
+    background-color: rgb(239, 242, 245);
+    color: rgb(105, 143, 130);
+}
+#pricing {
+    color: black;
+    
+}
+.greenish {
+    background-color: rgb(140,205,191);
+}
+.greenish-light{
+    background-color: rgb(150,206,202);
+    font-weight: bolder;
+}
+.bluish {
+    background-color: rgb(117,205,230);
+}
+.bluish-light {
+    background-color: rgb(130, 211, 233);
+    font-weight: bolder;
+}
+.redish {
+    background-color: rgb(203,89,106);
+}
+.redish-light{
+    background-color: rgb(205,100,114);
+    font-weight: bolder;
+}
+.btncolor {
+    background-color: steelblue;
+}

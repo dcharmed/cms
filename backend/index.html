@@ -1,0 +1,231 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/0b66fdf100.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/24.0.0/classic/ckeditor.js"></script>
+    <title>Hello CMS!</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-main">
+        <div class="container">
+            <a class="navbar-brand" href="#">ADDA BIZ</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">MyCoach</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link " href="#">MyClient</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link disabled" href="#">MyGym</a>
+                </li>
+            </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">Hi Adda!</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Add Content
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#coachform">Add Coach</a>
+                        <a class="dropdown-item" href="#">Add Client</a>
+                        <a class="dropdown-item" href="#">Add Gym</a>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+      </nav>
+      <header class="py-3 px-3 text-light bg-dark">
+          <div class="container">
+              <h1 class="text-light"> <i class="fas fa-cogs"></i>MyCoach2u</h1>
+          </div>
+      </header>
+      <main>
+          <div class="container py-5">
+            <div class="row">
+                <div class="col-3">
+                    <div class="card mb-3" style="width: 18rem;">
+                        <div class="card-header bg-main text-light">
+                            Featured
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="far fa-user"></i>MyCoach <span class="badge badge-secondary float-right m-2">3</span></li>
+                            <li class="list-group-item"><i class="fas fa-users"></i>MyClient <span class="badge badge-secondary float-right m-2">23</span></li>
+                            <li class="list-group-item"><i class="fas fa-dumbbell"></i>MyGym <span class="badge badge-secondary float-right m-2">2</span></li>
+                        </ul>
+                    </div>
+                    <div class="card bg-light" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Disk Space used</h5>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                          </div>
+                          <h5 class="card-title">Memory used</h5>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="card ml-3 mb-3">
+                        <div class="card-header bg-main text-light">
+                          Quick Overview
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="card bg-light">
+                                        <div class="card-body text-center">
+                                            <h2><i class="fas fa-home"></i></h2>
+                                            <H3 class="card-title">100</H3>
+                                            <p>GYM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card bg-light">
+                                        <div class="card-body text-center">
+                                            <h2><i class="fas fa-dollar-sign"></i></h2>
+                                            <h3 class="card-title">RM5,000</h3>
+                                            <p>REVENUE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card bg-light">
+                                        <div class="card-body text-center">
+                                            <h2><i class="fas fa-user-clock"></i></h2>
+                                            <h3 class="card-title">52</h3>
+                                            <p>ONLINE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card bg-light">
+                                        <div class="card-body text-center">
+                                            <h2><i class="fas fa-signal"></i></h2>
+                                            <h3 class="card-title">13,224</h3>
+                                            <p>MONTHLY USERS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card ml-3">
+                        <div class="card-header bg-main text-light">
+                          Latest Booking
+                        </div>
+                        <div class="card-body">
+                          <div class="container">
+                            <table class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </main>
+      <footer class="bg-dark py-5 text-center text-light">
+          <p>Copyright &copy; 2021 - Adda Comel</p>
+      </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="coachform" tabindex="-1" aria-labelledby="coachformLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="ecoachformLabel">Add New Coach</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <form id="coach">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Coach Name</label>
+                      <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Coach Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput2">Coach Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="example@mail.com">
+                    </div>
+                    <div class="form-group" id="editor">
+                        <label for="exampleFormControlInput2">Short Description</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Upload Image</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                      </div>
+                  </form>
+                  <script>
+                    ClassicEditor
+                        .create( document.querySelector( '#editor' ) )
+                        .catch( error => {
+                            console.error( error );
+                        } );
+                </script>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
+</body>
+</html>
